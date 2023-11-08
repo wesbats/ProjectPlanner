@@ -9,5 +9,6 @@
         void CreateProject(string title);
         void CreateTask(string title);
         IBranch GetSolution();
+        IList<IBasicInfos> GetBranchs();
     }
 }

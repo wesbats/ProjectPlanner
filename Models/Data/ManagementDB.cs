@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using ProjectPlanner.Models.Abstracts;
+using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
 
 namespace ProjectPlanner.Models.Data
@@ -16,16 +17,18 @@ namespace ProjectPlanner.Models.Data
             try
             {
                 string file = File.ReadAllText("Projects.json", Encoding.UTF8);
-                IList<IBranch>? listProjects = (IList<IBranch>?)JsonSerializer.Deserialize<IList<BranchBase>?>(file);
-                return listProjects ?? new List<IBranch>();
+                IList<IBranch>? mainBranch = JsonSerializer.Deserialize<List<Branch>>(file)?.Cast<IBranch>().ToList(); 
+                return mainBranch ?? new List<IBranch>();
             }
             catch (FileNotFoundException)
             {
                 File.WriteAllText("Projects.json", "");
                 return new List<IBranch>();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex);
+                Console.ReadKey();
                 return new List<IBranch>();
             }
         }

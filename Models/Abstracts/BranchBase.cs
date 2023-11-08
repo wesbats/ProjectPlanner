@@ -30,11 +30,23 @@ namespace ProjectPlanner.Models.Abstracts
             }
         }
 
+        public void IBranch(){}
+
         public void TitleUpdate(string title) => Title = title;
         public void DescriptionUpdate(string description) => Description = description;
         public void StatusUpdate(int status) => Status = status;
         public void CreateTask(string title) => BranchsTasks.Add(new TaskUser(title));
         public void CreateProject(string title) => BranchsSolutions.Add(new Branch(title));
         public IBranch GetSolution() => this;
+        public IList<IBasicInfos> GetBranchs()
+        {
+            IList<IBasicInfos> branchs = BranchsSolutions.Cast<IBasicInfos>().ToArray();
+            if(BranchsTasks.Count != 0){
+                foreach(TaskUser task in BranchsTasks){
+                    branchs.Add(task);
+                }
+            }
+            return branchs;
+        }
     }
 }

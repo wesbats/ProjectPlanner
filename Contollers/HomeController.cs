@@ -11,7 +11,7 @@ namespace ProjectPlanner.Contollers
         {
             //Inicia o controlador da Branch e carrega as Branchs salvas no Json.
             BranchController Branch = new BranchController();
-            Branch.Load();
+            // Branch.Load();
             
             //Verifica se já existe alguma branch, se não existir, cria a primeira branch
             if (Branch.In().Count == 0 )
@@ -21,7 +21,7 @@ namespace ProjectPlanner.Contollers
 
             //Inicia o menu principal
             while (true)
-            {   
+            {
                 //Inicia o Menu Principal
                 int? selecao = Menu.MainMenu(Branch.In());
 
@@ -37,7 +37,7 @@ namespace ProjectPlanner.Contollers
                 }
                 else if (selecao != null)
                 {
-                    Branch BranchSelected = (Branch)Branch.In()[(int)selecao].GetSolution();
+                    IBranch BranchSelected = (Branch)Branch.In()[(int)selecao].GetSolution();
                     Menu.Branch(BranchSelected);
                     DBController.Save(Branch.In());
                 }

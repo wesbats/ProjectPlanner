@@ -34,10 +34,20 @@ namespace ProjectPlanner.Views
             TopBar.Printer();
             Console.WriteLine(desription);
         }
-
+        // ================ CONTINUAR DAQUI =========================
         internal static void Branch(IBranch branch)
         {
-
+            TopBar.Printer();
+            if(branch.GetBranchs().Count != 0)
+            {
+                IList<string> titles = new List<string>();
+                Console.WriteLine(branch);
+                foreach(IBasicInfos solution in branch.GetBranchs())
+                {
+                    titles.Add(solution.Title);
+                }
+                MenuSelecao.Read(titles, branch.Title);
+            }
         }
         internal static int ObjectMenu<T>(IList<T> branch, string desription, bool inPojeto)
             where T : IBasicInfos

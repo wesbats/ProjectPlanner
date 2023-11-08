@@ -6,7 +6,7 @@ namespace ProjectPlanner.Contollers
 {
     internal class BranchController
     {
-        IList<IBranch> mainBranch;
+        IList<IBranch> mainBranch = DBController.Load();
 
         /// <summary>
         /// Retorna a Branch principal.
@@ -29,9 +29,9 @@ namespace ProjectPlanner.Contollers
         /// <summary>
         /// Apaga uma Branch.
         /// </summary>
-        internal void Remove()
+        internal void Remove(Branch branch)
         {
-
+            mainBranch.Remove(branch);
         }
 
         /// <summary>
