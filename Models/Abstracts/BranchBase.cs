@@ -1,5 +1,6 @@
 ﻿using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace ProjectPlanner.Models.Abstracts
 {
@@ -7,8 +8,8 @@ namespace ProjectPlanner.Models.Abstracts
     {
         public string Title { get; set; } = "";
         public string Description { get; set; } = "";
-        public List<IBranch> BranchsSolutions { get; set; } = new();
-        public List<ITask> BranchsTasks { get; set; } = new();
+        public List<Branch> BranchsSolutions { get; set; } = new();
+        public List<TaskUser> BranchsTasks { get; set; } = new();
         private int? status { get; set; }
         public int? Status
         {
@@ -30,8 +31,7 @@ namespace ProjectPlanner.Models.Abstracts
             }
         }
 
-        public void IBranch(){}
-
+        public BranchBase() { }
         public void TitleUpdate(string title) => Title = title;
         public void DescriptionUpdate(string description) => Description = description;
         public void StatusUpdate(int status) => Status = status;
@@ -41,8 +41,10 @@ namespace ProjectPlanner.Models.Abstracts
         public IList<IBasicInfos> GetBranchs()
         {
             IList<IBasicInfos> branchs = BranchsSolutions.Cast<IBasicInfos>().ToArray();
-            if(BranchsTasks.Count != 0){
-                foreach(TaskUser task in BranchsTasks){
+            if (BranchsTasks.Count != 0)
+            {
+                foreach (TaskUser task in BranchsTasks)
+                {
                     branchs.Add(task);
                 }
             }

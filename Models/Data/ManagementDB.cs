@@ -17,7 +17,7 @@ namespace ProjectPlanner.Models.Data
             try
             {
                 string file = File.ReadAllText("Projects.json", Encoding.UTF8);
-                IList<IBranch>? mainBranch = JsonSerializer.Deserialize<List<Branch>>(file)?.Cast<IBranch>().ToList(); 
+                IList<IBranch>? mainBranch = JsonSerializer.Deserialize<List<Branch>>(file)?.Cast<IBranch>().ToList();
                 return mainBranch ?? new List<IBranch>();
             }
             catch (FileNotFoundException)

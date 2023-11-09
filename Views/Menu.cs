@@ -35,18 +35,20 @@ namespace ProjectPlanner.Views
             Console.WriteLine(desription);
         }
         // ================ CONTINUAR DAQUI =========================
-        internal static void Branch(IBranch branch)
+        internal static int? Branch(IBranch branch)
         {
             TopBar.Printer();
-            if(branch.GetBranchs().Count != 0)
+            IList<string> options = TransformListText(branch);
+            options.Add("Nova Branch");
+            options.Add("Nova Task");
+            options.Add("Voltar");
+            if(options.Count != 0)
             {
-                IList<string> titles = new List<string>();
-                Console.WriteLine(branch);
-                foreach(IBasicInfos solution in branch.GetBranchs())
-                {
-                    titles.Add(solution.Title);
-                }
-                MenuSelecao.Read(titles, branch.Title);
+                return MenuSelecao.Read(options, branch.Title);
+            }
+            else
+            {
+                return null;
             }
         }
         internal static int ObjectMenu<T>(IList<T> branch, string desription, bool inPojeto)
@@ -71,6 +73,25 @@ namespace ProjectPlanner.Views
             if (list != null)
             {
                 foreach (var item in list)
+                {
+                    string title = item.Title;
+
+                    if (item is ITask task)
+                    {
+                        title += $" - {(task.Complete ? "Finalizada" : "Pendente")}";
+                    }
+                    options.Add(title);
+                }
+            }
+            return options;
+        }
+
+        internal static IList<string> TransformListText(IBranch list)
+        {
+            IList<string> options = new List<string>();
+            if (list.GetBranchs().Count != 0)
+            {
+                foreach (var item in list.GetBranchs())
                 {
                     string title = item.Title;
 

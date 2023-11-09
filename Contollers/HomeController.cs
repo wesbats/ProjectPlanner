@@ -12,9 +12,9 @@ namespace ProjectPlanner.Contollers
             //Inicia o controlador da Branch e carrega as Branchs salvas no Json.
             BranchController Branch = new BranchController();
             // Branch.Load();
-            
+
             //Verifica se já existe alguma branch, se não existir, cria a primeira branch
-            if (Branch.In().Count == 0 )
+            if (Branch.In().Count == 0)
             {
                 Branch.Add(Menu.Text("Crie sua primeira Branch:"));
             }
@@ -23,22 +23,32 @@ namespace ProjectPlanner.Contollers
             while (true)
             {
                 //Inicia o Menu Principal
-                int? selecao = Menu.MainMenu(Branch.In());
+                int? SelectedMainMenu = Menu.MainMenu(Branch.In());
 
                 //Processa a seleção do Menu Principal
-                if (selecao == Branch.Count() + 1)
+                if (SelectedMainMenu == Branch.Count() + 1)
                 {
                     DBController.Save(Branch.In());
                     break;
                 }
-                else if (selecao == Branch.Count())
+                else if (SelectedMainMenu == Branch.Count())
                 {
                     Branch.Add(Menu.Text("Escreva o nome da branch:"));
                 }
-                else if (selecao != null)
+                else if (SelectedMainMenu != null)
                 {
-                    IBranch BranchSelected = (Branch)Branch.In()[(int)selecao].GetSolution();
-                    Menu.Branch(BranchSelected);
+                    while (InBranch() != Branch.Count() + 2) ;
+                    int? InBranch()
+                    {
+                        IBranch BranchSelected = (Branch)Branch.In()[(int)SelectedMainMenu].GetSolution();
+                        int? selectedBranch = Menu.Branch(BranchSelected);
+                        if (selectedBranch == null)
+                        {
+                            Branch.Add(Menu.Text($"Crie uma nova Branch para {BranchSelected.Title}"), BranchSelected);
+                            return null;
+                        }
+                        return selectedBranch;
+                    }
                     DBController.Save(Branch.In());
                 }
             }

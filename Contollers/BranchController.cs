@@ -26,6 +26,24 @@ namespace ProjectPlanner.Contollers
             return;
         }
 
+        internal void Add(string titleNewBranch, IBranch branch)
+        {
+            branch.CreateProject(titleNewBranch != "" ? titleNewBranch : "Branch sem título");
+            return;
+        }
+
+        internal void AddTask(string titleNewTask, IBranch branch)
+        {
+            branch.CreateTask(titleNewTask != "" ? titleNewTask : "Branch sem título");
+            return;
+        }
+
+        internal bool BranchsOfBranch(IBranch branch)
+        {
+
+            return false;
+        }
+
         /// <summary>
         /// Apaga uma Branch.
         /// </summary>
