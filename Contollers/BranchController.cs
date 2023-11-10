@@ -29,19 +29,23 @@ namespace ProjectPlanner.Contollers
         internal void Add(string titleNewBranch, IBranch branch)
         {
             branch.CreateProject(titleNewBranch != "" ? titleNewBranch : "Branch sem título");
-            return;
         }
 
         internal void AddTask(string titleNewTask, IBranch branch)
         {
-            branch.CreateTask(titleNewTask != "" ? titleNewTask : "Branch sem título");
-            return;
+            // branch.CreateTask("TaskTeste");
+            Console.WriteLine(titleNewTask != "" ? titleNewTask : "Task sem título");
+            // branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
+            TaskUser task = new TaskUser("Teste");
+            Console.WriteLine(task.Title);
+            branch.BranchsTasks.Add(task);
+            Console.ReadKey();
+            // branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
         }
 
-        internal bool BranchsOfBranch(IBranch branch)
+        internal IList<IBasicInfos> BranchsOfBranch(IBranch branch)
         {
-
-            return false;
+            return branch.GetBranchs();
         }
 
         /// <summary>

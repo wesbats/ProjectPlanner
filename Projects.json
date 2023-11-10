@@ -1,13 +1,36 @@
 ﻿[
   {
-    "Title": "Branch sem título",
+    "Title": "Primeira Branch",
     "Description": "",
-    "BranchsSolutions": [],
+    "BranchsSolutions": [
+      {
+        "Title": "Branch sem título",
+        "Description": "",
+        "BranchsSolutions": [
+          {
+            "Title": "Branch sem título",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [],
+            "Status": null
+          },
+          {
+            "Title": "branch2",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [],
+            "Status": null
+          }
+        ],
+        "BranchsTasks": [],
+        "Status": null
+      }
+    ],
     "BranchsTasks": [],
     "Status": null
   },
   {
-    "Title": "Teste",
+    "Title": "Segunda Branch",
     "Description": "",
     "BranchsSolutions": [],
     "BranchsTasks": [],

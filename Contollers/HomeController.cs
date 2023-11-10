@@ -37,17 +37,44 @@ namespace ProjectPlanner.Contollers
                 }
                 else if (SelectedMainMenu != null)
                 {
-                    while (InBranch() != Branch.Count() + 2) ;
-                    int? InBranch()
+                    Branch branchSelectedMainMenu = (Branch)Branch.In()[(int)SelectedMainMenu].GetSolution();
+                    while(InBranch(branchSelectedMainMenu) != null);
+                        
+                    int? InBranch(IBranch branch)
                     {
-                        IBranch BranchSelected = (Branch)Branch.In()[(int)SelectedMainMenu].GetSolution();
-                        int? selectedBranch = Menu.Branch(BranchSelected);
-                        if (selectedBranch == null)
+                        while(true)
                         {
-                            Branch.Add(Menu.Text($"Crie uma nova Branch para {BranchSelected.Title}"), BranchSelected);
-                            return null;
+                        int? selectedMenuBranchChill = Menu.Branch(branch);
+                        if(selectedMenuBranchChill != null)
+                        {
+                                if(selectedMenuBranchChill == branch.GetBranchs().Count() + 2)
+                                {
+                                    break;
+                                }
+                                else if(selectedMenuBranchChill == branch.GetBranchs().Count() + 1)
+                                {
+                                    Branch.AddTask(Menu.Text("Digite o nome da Task:"), branch);
+                                }
+                                else if(selectedMenuBranchChill == branch.GetBranchs().Count() )
+                                {
+                                    Branch.Add(Menu.Text("Digite o nome da Branch:"), branch);
+                                }
+                                else if(selectedMenuBranchChill != null)
+                                {
+                                    if(selectedMenuBranchChill <= branch.BranchsSolutions.Count){
+                                        Console.WriteLine("Branch");
+                                        Console.ReadKey();
+                                        Branch selectedBranchChill = (Branch)branch.GetBranchs()[(int)selectedMenuBranchChill];
+                                        InBranch(selectedBranchChill);
+                                    }
+                                    else{
+                                        Console.WriteLine("Task");
+                                        Console.ReadKey();
+                                    }
+                                }
+                            }
                         }
-                        return selectedBranch;
+                        return null;
                     }
                     DBController.Save(Branch.In());
                 }

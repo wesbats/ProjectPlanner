@@ -27,8 +27,8 @@ namespace ProjectPlanner.Models.Data
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
-                Console.ReadKey();
+                // Console.WriteLine(ex);
+                // Console.ReadKey();
                 return new List<IBranch>();
             }
         }
@@ -40,7 +40,7 @@ namespace ProjectPlanner.Models.Data
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping, // UTF-8
                 WriteIndented = true // Formata o JSON para legibilidade
             };
-            string json = JsonSerializer.Serialize(projetos.OfType<BranchBase>().ToList(), configSerializer);
+            string json = JsonSerializer.Serialize(projetos.OfType<Branch>().ToList(), configSerializer);
             File.WriteAllText("Projects.json", json, Encoding.UTF8);
         }
     }

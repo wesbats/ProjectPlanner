@@ -40,7 +40,7 @@ namespace ProjectPlanner.Models.Abstracts
         public IBranch GetSolution() => this;
         public IList<IBasicInfos> GetBranchs()
         {
-            IList<IBasicInfos> branchs = BranchsSolutions.Cast<IBasicInfos>().ToArray();
+            IList<IBasicInfos> branchs = BranchsSolutions.Count != 0 ? BranchsSolutions.Cast<IBasicInfos>().ToArray() : new List<Branch>().Cast<IBasicInfos>().ToArray();
             if (BranchsTasks.Count != 0)
             {
                 foreach (TaskUser task in BranchsTasks)
