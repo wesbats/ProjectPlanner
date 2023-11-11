@@ -37,17 +37,19 @@ namespace ProjectPlanner.Models.Abstracts
         public void StatusUpdate(int status) => Status = status;
         public void CreateTask(string title) => BranchsTasks.Add(new TaskUser(title));
         public void CreateProject(string title) => BranchsSolutions.Add(new Branch(title));
+        public void Remove(int counter)
+        {
+            Type type = GetBranchs()[counter].GetType();
+            if(type == typeof(Branch)) BranchsSolutions.Remove((Branch)GetBranchs()[counter]);
+            if(type == typeof(TaskUser)) BranchsTasks.Remove((TaskUser)GetBranchs()[counter]);
+        }
         public IBranch GetSolution() => this;
         public IList<IBasicInfos> GetBranchs()
         {
-            IList<IBasicInfos> branchs = BranchsSolutions.Count != 0 ? BranchsSolutions.Cast<IBasicInfos>().ToArray() : new List<Branch>().Cast<IBasicInfos>().ToArray();
-            if (BranchsTasks.Count != 0)
-            {
-                foreach (TaskUser task in BranchsTasks)
-                {
-                    branchs.Add(task);
-                }
-            }
+            List<IBasicInfos> branchs = new List<IBasicInfos>();
+            branchs.AddRange(BranchsSolutions);
+            branchs.AddRange(BranchsTasks);
+
             return branchs;
         }
     }

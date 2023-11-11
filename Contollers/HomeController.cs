@@ -44,12 +44,16 @@ namespace ProjectPlanner.Contollers
                     {
                         while(true)
                         {
-                        int? selectedMenuBranchChill = Menu.Branch(branch);
-                        if(selectedMenuBranchChill != null)
-                        {
-                                if(selectedMenuBranchChill == branch.GetBranchs().Count() + 2)
+                            int? selectedMenuBranchChill = Menu.Branch(branch);
+                            if(selectedMenuBranchChill != null)
+                            {
+                                if(selectedMenuBranchChill == branch.GetBranchs().Count() + 3)
                                 {
                                     break;
+                                }
+                                if(selectedMenuBranchChill == branch.GetBranchs().Count() + 2)
+                                {
+                                    // ((Branch)branch).Remove((int)branch);
                                 }
                                 else if(selectedMenuBranchChill == branch.GetBranchs().Count() + 1)
                                 {
@@ -61,15 +65,12 @@ namespace ProjectPlanner.Contollers
                                 }
                                 else if(selectedMenuBranchChill != null)
                                 {
-                                    if(selectedMenuBranchChill <= branch.BranchsSolutions.Count){
-                                        Console.WriteLine("Branch");
-                                        Console.ReadKey();
-                                        Branch selectedBranchChill = (Branch)branch.GetBranchs()[(int)selectedMenuBranchChill];
-                                        InBranch(selectedBranchChill);
+                                    IBasicInfos selectedBranchChill = branch.GetBranchs()[(int)selectedMenuBranchChill];
+                                    if(selectedBranchChill.GetType() == typeof(Branch)){
+                                        InBranch((Branch)selectedBranchChill);
                                     }
                                     else{
-                                        Console.WriteLine("Task");
-                                        Console.ReadKey();
+                                        ((TaskUser)selectedBranchChill).CompleteUpdate();
                                     }
                                 }
                             }

@@ -33,14 +33,7 @@ namespace ProjectPlanner.Contollers
 
         internal void AddTask(string titleNewTask, IBranch branch)
         {
-            // branch.CreateTask("TaskTeste");
-            Console.WriteLine(titleNewTask != "" ? titleNewTask : "Task sem título");
-            // branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
-            TaskUser task = new TaskUser("Teste");
-            Console.WriteLine(task.Title);
-            branch.BranchsTasks.Add(task);
-            Console.ReadKey();
-            // branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
+            branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
         }
 
         internal IList<IBasicInfos> BranchsOfBranch(IBranch branch)

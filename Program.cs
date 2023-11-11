@@ -1,4 +1,7 @@
-﻿using ProjectPlanner.Contollers;
+﻿using System.Text.Json;
+using ProjectPlanner.Contollers;
+using ProjectPlanner.Models.Classes;
+using ProjectPlanner.Models.Interfaces;
 
 namespace ProjectPlanner
 {
@@ -6,6 +9,7 @@ namespace ProjectPlanner
     {
         static void Main()
         {
+            
             HomeController.Start();
         }
 

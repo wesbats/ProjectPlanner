@@ -11,7 +11,13 @@
             "Title": "Branch sem título",
             "Description": "",
             "BranchsSolutions": [],
-            "BranchsTasks": [],
+            "BranchsTasks": [
+              {
+                "Title": "Task3",
+                "Description": "",
+                "Complete": true
+              }
+            ],
             "Status": null
           },
           {
@@ -22,11 +28,23 @@
             "Status": null
           }
         ],
-        "BranchsTasks": [],
+        "BranchsTasks": [
+          {
+            "Title": "teste 2",
+            "Description": "",
+            "Complete": false
+          }
+        ],
         "Status": null
       }
     ],
-    "BranchsTasks": [],
+    "BranchsTasks": [
+      {
+        "Title": "Teste",
+        "Description": "",
+        "Complete": false
+      }
+    ],
     "Status": null
   },
   {

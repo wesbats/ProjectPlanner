@@ -41,6 +41,7 @@ namespace ProjectPlanner.Views
             IList<string> options = TransformListText(branch);
             options.Add("Nova Branch");
             options.Add("Nova Task");
+            options.Add("Apagar essa Branch");
             options.Add("Voltar");
             if(options.Count != 0)
             {
