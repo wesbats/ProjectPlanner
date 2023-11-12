@@ -99,7 +99,7 @@ namespace ProjectPlanner.Contollers
                                             IBasicInfos selectedBranchChill = branch.GetBranchs()[(int)selectedMenuBranchChill[0]];
                                             if(selectedBranchChill.GetType() == typeof(Branch))
                                             {
-                                                string remove = Menu.Text($"Deseja apagar {branch.Title}? (Y/N)").ToLower();
+                                                string remove = Menu.Text($"Deseja apagar {selectedBranchChill.Title}? (Y/N)").ToLower();
                                                 if(remove == "sim" || remove == "s" || remove == "y" || remove == "yes")
                                                 {
                                                     branch.BranchsSolutions.Remove((Branch)selectedBranchChill);
