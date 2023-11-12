@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectPlanner.Views
+﻿namespace ProjectPlanner.Views
 {
     internal class MenuSelecao
     {
-        internal static int Read(IList<string> options, string? title)
+        internal static int[] Read(IList<string> options, string? title)
         {
-            int selected = 0;
+            int[] selected = new int[2]{0, 0};
             ConsoleKeyInfo key;
             do
             {
-                Print(options, selected, null);
+                Print(options, selected[0], title);
                 key = Console.ReadKey(true);
                 selected = UpdateSelected(options, selected, key);
-            } while (key.Key != ConsoleKey.Enter);
+            } while (key.Key != ConsoleKey.Enter && key.Key != ConsoleKey.Delete && key.Key != ConsoleKey.R);
             return selected;
         }
         
@@ -34,29 +28,37 @@ namespace ProjectPlanner.Views
             }
         }
 
-        private static int UpdateSelected(IList<string> options, int selected, ConsoleKeyInfo key)
+        private static int[] UpdateSelected(IList<string> options, int[] selected, ConsoleKeyInfo key)
         {
             if (key.Key == ConsoleKey.DownArrow)
             {
-                if (selected == options.Count - 1)
+                if (selected[0] == options.Count - 1)
                 {
-                    selected = 0;
+                    selected[0] = 0;
                 }
                 else
                 {
-                    selected++;
+                    selected[0]++;
                 }
             }
-            else if (key.Key == ConsoleKey.UpArrow)
+            if (key.Key == ConsoleKey.UpArrow)
             {
-                if (selected == 0)
+                if (selected[0] == 0)
                 {
-                    selected = options.Count - 1;
+                    selected[0] = options.Count - 1;
                 }
                 else
                 {
-                    selected--;
+                    selected[0]--;
                 }
+            }
+            if (key.Key == ConsoleKey.R)
+            {
+                selected[1] = 1;
+            }
+            if (key.Key == ConsoleKey.Delete)
+            {
+                selected[1] = 2;
             }
             return selected;
         }

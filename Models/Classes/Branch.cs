@@ -6,6 +6,5 @@ namespace ProjectPlanner.Models.Classes
     {
         public Branch() { }
         internal Branch(string title) => Title = title == "" ? "Branch sem nome" : title;
-
     }
 }

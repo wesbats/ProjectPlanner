@@ -1,5 +1,4 @@
 ﻿using ProjectPlanner.Models.Classes;
-using System.Text.Json.Serialization;
 
 namespace ProjectPlanner.Models.Interfaces
 {

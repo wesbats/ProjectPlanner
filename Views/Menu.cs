@@ -1,11 +1,10 @@
-﻿using ProjectPlanner.Models.Classes;
-using ProjectPlanner.Models.Interfaces;
+﻿using ProjectPlanner.Models.Interfaces;
 
 namespace ProjectPlanner.Views
 {
     internal class Menu
     {
-        internal static int? MainMenu(IList<IBranch> mainBranch)
+        internal static int[]? MainMenu(IList<IBranch> mainBranch)
         {
             TopBar.Printer();
 
@@ -35,13 +34,12 @@ namespace ProjectPlanner.Views
             Console.WriteLine(desription);
         }
         // ================ CONTINUAR DAQUI =========================
-        internal static int? Branch(IBranch branch)
+        internal static int[]? Branch(IBranch branch)
         {
             TopBar.Printer();
             IList<string> options = TransformListText(branch);
             options.Add("Nova Branch");
             options.Add("Nova Task");
-            options.Add("Apagar essa Branch");
             options.Add("Voltar");
             if(options.Count != 0)
             {
@@ -52,7 +50,7 @@ namespace ProjectPlanner.Views
                 return null;
             }
         }
-        internal static int ObjectMenu<T>(IList<T> branch, string desription, bool inPojeto)
+        internal static int[] ObjectMenu<T>(IList<T> branch, string desription, bool inPojeto)
             where T : IBasicInfos
         {
             TopBar.Printer();

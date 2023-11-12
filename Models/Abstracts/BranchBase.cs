@@ -1,6 +1,5 @@
 ﻿using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
-using System.Text.Json.Serialization;
 
 namespace ProjectPlanner.Models.Abstracts
 {
@@ -32,7 +31,7 @@ namespace ProjectPlanner.Models.Abstracts
         }
 
         public BranchBase() { }
-        public void TitleUpdate(string title) => Title = title;
+        public void TitleUpdate(string title) => Title = title != ""? title : "Branch sem título";
         public void DescriptionUpdate(string description) => Description = description;
         public void StatusUpdate(int status) => Status = status;
         public void CreateTask(string title) => BranchsTasks.Add(new TaskUser(title));

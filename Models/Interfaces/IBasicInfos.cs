@@ -1,6 +1,4 @@
-﻿using ProjectPlanner.Models.Classes;
-
-namespace ProjectPlanner.Models.Interfaces
+﻿namespace ProjectPlanner.Models.Interfaces
 {
     internal interface IBasicInfos
     {

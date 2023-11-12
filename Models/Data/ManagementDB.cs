@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
-using ProjectPlanner.Models.Abstracts;
 using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
 
@@ -25,10 +21,8 @@ namespace ProjectPlanner.Models.Data
                 File.WriteAllText("Projects.json", "");
                 return new List<IBranch>();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                // Console.WriteLine(ex);
-                // Console.ReadKey();
                 return new List<IBranch>();
             }
         }

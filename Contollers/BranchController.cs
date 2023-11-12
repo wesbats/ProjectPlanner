@@ -1,6 +1,5 @@
 ﻿using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
-using ProjectPlanner.Views;
 
 namespace ProjectPlanner.Contollers
 {
@@ -26,19 +25,24 @@ namespace ProjectPlanner.Contollers
             return;
         }
 
+        /// <summary>
+        /// Cria uma Branch na Branch atual.
+        /// </summary>
+        /// <param name="titleNewBranch"></param>
+        /// <param name="branch"></param>
         internal void Add(string titleNewBranch, IBranch branch)
         {
             branch.CreateProject(titleNewBranch != "" ? titleNewBranch : "Branch sem título");
         }
 
+        /// <summary>
+        /// Cria uma Task na Branch atual.
+        /// </summary>
+        /// <param name="titleNewTask"></param>
+        /// <param name="branch"></param>
         internal void AddTask(string titleNewTask, IBranch branch)
         {
             branch.CreateTask(titleNewTask != "" ? titleNewTask : "Task sem título");
-        }
-
-        internal IList<IBasicInfos> BranchsOfBranch(IBranch branch)
-        {
-            return branch.GetBranchs();
         }
 
         /// <summary>
@@ -65,6 +69,7 @@ namespace ProjectPlanner.Contollers
         {
             DBController.Save(mainBranch);
         }
+
         /// <summary>
         /// Solicita ao DBController os dados salvos da Branch Principal.
         /// </summary>
