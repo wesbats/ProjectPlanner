@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Projects.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NJsonSchema" Version="10.9.0" />
   </ItemGroup>
 

@@ -1,1 +1,591 @@
-﻿[]
+﻿[
+  {
+    "Title": "Estudos",
+    "Description": "",
+    "BranchsSolutions": [
+      {
+        "Title": "C#",
+        "Description": "",
+        "BranchsSolutions": [
+          {
+            "Title": "Iniciante",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Configuração do ambiente de desenvolvimento",
+                "Description": "",
+                "Complete": true
+              },
+              {
+                "Title": "Variaveis, tipos de dados",
+                "Description": "",
+                "Complete": true
+              },
+              {
+                "Title": "Classes e objetos",
+                "Description": "",
+                "Complete": true
+              },
+              {
+                "Title": "Herança e polimorfismo",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Array",
+                "Description": "",
+                "Complete": true
+              },
+              {
+                "Title": "Listas simples",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Médio",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Encapsulamento",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Abstração",
+                "Description": "",
+                "Complete": true
+              },
+              {
+                "Title": "LINQ",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Leitura de arquivos",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Avançado",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Serialização avançada",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "interação com banco de dados",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "WebAPI",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          }
+        ],
+        "BranchsTasks": [
+          {
+            "Title": "Desenvolvimento de um projeto completo",
+            "Description": "",
+            "Complete": false
+          }
+        ],
+        "Status": null
+      },
+      {
+        "Title": "Inglês",
+        "Description": "",
+        "BranchsSolutions": [
+          {
+            "Title": "Iniciante",
+            "Description": "",
+            "BranchsSolutions": [
+              {
+                "Title": "Vocabulário essencial",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Números",
+                    "Description": "",
+                    "Complete": true
+                  },
+                  {
+                    "Title": "Cores",
+                    "Description": "",
+                    "Complete": true
+                  },
+                  {
+                    "Title": "Dias da semana",
+                    "Description": "",
+                    "Complete": true
+                  },
+                  {
+                    "Title": "Palavras do cotidiano",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              },
+              {
+                "Title": "Gramática básica",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Estrutura de frases simples",
+                    "Description": "",
+                    "Complete": false
+                  },
+                  {
+                    "Title": "Pronomes pessoais e verbos de ação básicos",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              }
+            ],
+            "BranchsTasks": [],
+            "Status": null
+          },
+          {
+            "Title": "Médio",
+            "Description": "",
+            "BranchsSolutions": [
+              {
+                "Title": "Ampliação do vocabulário",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Palavras relacionadas a hobbies e interesses",
+                    "Description": "",
+                    "Complete": true
+                  },
+                  {
+                    "Title": "Adjetivos e descrições básicas",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              },
+              {
+                "Title": "Gramática intermediária",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Uso de tempos verbais simples",
+                    "Description": "",
+                    "Complete": false
+                  },
+                  {
+                    "Title": "Construção de perguntas e respostas",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              },
+              {
+                "Title": "Conversação e compreensão oral",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Práticas de diálogos simples",
+                    "Description": "",
+                    "Complete": false
+                  },
+                  {
+                    "Title": "Compreensão de ingles falado em contextos familiares",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              },
+              {
+                "Title": "Leitura simples",
+                "Description": "",
+                "BranchsSolutions": [],
+                "BranchsTasks": [
+                  {
+                    "Title": "Textos curtos",
+                    "Description": "",
+                    "Complete": false
+                  },
+                  {
+                    "Title": "Leitura de histórias básicas",
+                    "Description": "",
+                    "Complete": false
+                  }
+                ],
+                "Status": null
+              }
+            ],
+            "BranchsTasks": [],
+            "Status": null
+          }
+        ],
+        "BranchsTasks": [],
+        "Status": null
+      }
+    ],
+    "BranchsTasks": [],
+    "Status": null
+  },
+  {
+    "Title": "Projetos",
+    "Description": "",
+    "BranchsSolutions": [
+      {
+        "Title": "Site de apostas",
+        "Description": "",
+        "BranchsSolutions": [
+          {
+            "Title": "Pesquisa e planejamento",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Estudo de regulamentações e público-alvo",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Definição de funcionalidades",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Design e prototipagem",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Criação de Wireframes e design de UI",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Protótipos interativos",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Front-end",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Implementação de layout responsivo",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Uso de tecnologias modernas",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Back-end",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Escolha de banco de dados e lógica de negócios",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Implementação de autenticação",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Funcionalidades principais",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Registro, tipos de apostas, cotações em tempo real",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Histórico de apostas",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Interações de pagamento",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Gateways de pagamentos seguro",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Testes de transações",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Recursos de segurança",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "HTTPS, medidas anti-fraude",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Conformidade com regulamentações",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Testes e qualidade",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Testes abrangentes",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Verificação de compatibilidade",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Lançamento e monitoramentos",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Lançamento e monitoramento contínuo",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Atualizações conforme feedback",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Marketing",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Estratégias de marketing online",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Promoções e parcerias",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          }
+        ],
+        "BranchsTasks": [],
+        "Status": null
+      },
+      {
+        "Title": "Calculadora em C#",
+        "Description": "",
+        "BranchsSolutions": [
+          {
+            "Title": "Planejamento inicial",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Definição das operações básicas",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Identificação de público alvo",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Back-end",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Configuração do ambiente",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Implementação de classe para realizar operações matemáticas",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Console",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Criação de um menu simples para interação",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Solicitação de entrada para números e operadores",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Lógica de operadores",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Implementação de métodos para realizar as operações básicas",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Tratamento de erros para divisões por zero ou operações inválidas",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Exibição de resultados",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Exibição do resultado no console",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Opção de continuar calculando ou encerrar o programa",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Melhorias de usabilidade",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Adição de operações para limpar a calculadora ou reiniciar",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Validar entrada apenas para números e operadores válidos",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          },
+          {
+            "Title": "Testes simples",
+            "Description": "",
+            "BranchsSolutions": [],
+            "BranchsTasks": [
+              {
+                "Title": "Testes unitários para cada operação básica",
+                "Description": "",
+                "Complete": false
+              },
+              {
+                "Title": "Verificação do comportamento em diferentes cenários",
+                "Description": "",
+                "Complete": false
+              }
+            ],
+            "Status": null
+          }
+        ],
+        "BranchsTasks": [
+          {
+            "Title": "Lançamento do projeto",
+            "Description": "",
+            "Complete": false
+          }
+        ],
+        "Status": null
+      }
+    ],
+    "BranchsTasks": [],
+    "Status": null
+  }
+]

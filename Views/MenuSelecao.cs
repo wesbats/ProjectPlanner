@@ -4,7 +4,7 @@
     {
         internal static int[] Read(IList<string> options, string? title)
         {
-            int[] selected = new int[2]{0, 0};
+            int[] selected = new int[2] { 0, 0 };
             ConsoleKeyInfo key;
             do
             {
@@ -14,7 +14,7 @@
             } while (key.Key != ConsoleKey.Enter && key.Key != ConsoleKey.Delete && key.Key != ConsoleKey.R);
             return selected;
         }
-        
+
         private static void Print(IList<string> options, int selected, string? title)
         {
             TopBar.Printer();

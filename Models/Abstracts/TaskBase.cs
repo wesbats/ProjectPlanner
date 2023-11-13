@@ -8,7 +8,7 @@ namespace ProjectPlanner.Models.Abstracts
         public string Description { get; set; } = "";
         public bool Complete { get; set; } = false;
 
-        public void TitleUpdate(string title) => Title = title != ""? title : "Task sem título";
+        public void TitleUpdate(string title) => Title = title != "" ? title : "Task sem título";
         public void DescriptionUpdate(string description) => Description = description;
         public void CompleteUpdate() => Complete = !Complete;
         public ITask GetTask() => this;

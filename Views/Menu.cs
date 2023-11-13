@@ -41,7 +41,7 @@ namespace ProjectPlanner.Views
             options.Add("Nova Branch");
             options.Add("Nova Task");
             options.Add("Voltar");
-            if(options.Count != 0)
+            if (options.Count != 0)
             {
                 return MenuSelecao.Read(options, branch.Title);
             }

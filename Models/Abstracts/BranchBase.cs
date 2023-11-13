@@ -31,7 +31,7 @@ namespace ProjectPlanner.Models.Abstracts
         }
 
         public BranchBase() { }
-        public void TitleUpdate(string title) => Title = title != ""? title : "Branch sem título";
+        public void TitleUpdate(string title) => Title = title != "" ? title : "Branch sem título";
         public void DescriptionUpdate(string description) => Description = description;
         public void StatusUpdate(int status) => Status = status;
         public void CreateTask(string title) => BranchsTasks.Add(new TaskUser(title));
@@ -39,8 +39,8 @@ namespace ProjectPlanner.Models.Abstracts
         public void Remove(int counter)
         {
             Type type = GetBranchs()[counter].GetType();
-            if(type == typeof(Branch)) BranchsSolutions.Remove((Branch)GetBranchs()[counter]);
-            if(type == typeof(TaskUser)) BranchsTasks.Remove((TaskUser)GetBranchs()[counter]);
+            if (type == typeof(Branch)) BranchsSolutions.Remove((Branch)GetBranchs()[counter]);
+            if (type == typeof(TaskUser)) BranchsTasks.Remove((TaskUser)GetBranchs()[counter]);
         }
         public IBranch GetSolution() => this;
         public IList<IBasicInfos> GetBranchs()

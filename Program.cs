@@ -6,7 +6,6 @@ namespace ProjectPlanner
     {
         static void Main()
         {
-            
             HomeController.Start();
         }
     }
