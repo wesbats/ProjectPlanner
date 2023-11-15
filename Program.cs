@@ -1,4 +1,4 @@
-﻿using ProjectPlanner.Contollers;
+﻿using ProjectPlanner.Controllers;
 
 namespace ProjectPlanner
 {
@@ -6,8 +6,7 @@ namespace ProjectPlanner
     {
         static void Main()
         {
-            HomeController.Start();
+            HomeController.Run();
         }
     }
-
 }

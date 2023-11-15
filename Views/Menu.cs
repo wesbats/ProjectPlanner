@@ -8,7 +8,7 @@ namespace ProjectPlanner.Views
         {
             TopBar.Printer();
 
-            if (mainBranch.Count != 0)
+            if (mainBranch.Any())
             {
                 IList<string> options = TransformListText(mainBranch);
                 options.Add("Novo projeto");
@@ -28,12 +28,6 @@ namespace ProjectPlanner.Views
             return Console.ReadLine() ?? "";
         }
 
-        internal static void Null(string desription)
-        {
-            TopBar.Printer();
-            Console.WriteLine(desription);
-        }
-        // ================ CONTINUAR DAQUI =========================
         internal static int[]? Branch(IBranch branch)
         {
             TopBar.Printer();
@@ -49,20 +43,6 @@ namespace ProjectPlanner.Views
             {
                 return null;
             }
-        }
-        internal static int[] ObjectMenu<T>(IList<T> branch, string desription, bool inPojeto)
-            where T : IBasicInfos
-        {
-            TopBar.Printer();
-            IList<string> options = TransformListText(branch);
-            if (inPojeto)
-            {
-                options.Add("Novo projeto");
-                options.Add("Nova task");
-            }
-            options.Add("Voltar");
-
-            return MenuSelecao.Read(options, desription);
         }
 
         internal static IList<string> TransformListText<T>(IList<T> list)

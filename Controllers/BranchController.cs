@@ -1,11 +1,17 @@
 ﻿using ProjectPlanner.Models.Classes;
 using ProjectPlanner.Models.Interfaces;
 
-namespace ProjectPlanner.Contollers
+namespace ProjectPlanner.Controllers
 {
     internal class BranchController
     {
-        IList<IBranch> mainBranch = DBController.Load();
+        DBController DB = new();
+        IList<IBranch> mainBranch;
+
+        public BranchController()
+        {
+            mainBranch = Load();
+        }
 
         /// <summary>
         /// Retorna a Branch principal.
@@ -16,13 +22,17 @@ namespace ProjectPlanner.Contollers
             return mainBranch;
         }
 
+        internal bool Any()
+        {
+            return mainBranch.Any();
+        }
+
         /// <summary>
         /// Cria uma nova Branch.
         /// </summary>
         internal void Add(string titleNewBranch)
         {
             mainBranch.Add(new Branch(titleNewBranch != "" ? titleNewBranch : "Branch sem título"));
-            return;
         }
 
         /// <summary>
@@ -67,16 +77,16 @@ namespace ProjectPlanner.Contollers
         /// </summary>
         internal void Save()
         {
-            DBController.Save(mainBranch);
+            DB.Save(mainBranch);
         }
 
         /// <summary>
         /// Solicita ao DBController os dados salvos da Branch Principal.
         /// </summary>
         /// <returns></returns>
-        internal void Load()
+        internal IList<IBranch> Load()
         {
-            mainBranch = DBController.Load();
+            return DB.Load();
         }
     }
 }

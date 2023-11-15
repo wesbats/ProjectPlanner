@@ -14,32 +14,26 @@
             "BranchsTasks": [
               {
                 "Title": "Configuração do ambiente de desenvolvimento",
-                "Description": "",
                 "Complete": true
               },
               {
                 "Title": "Variaveis, tipos de dados",
-                "Description": "",
                 "Complete": true
               },
               {
                 "Title": "Classes e objetos",
-                "Description": "",
                 "Complete": true
               },
               {
                 "Title": "Herança e polimorfismo",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Array",
-                "Description": "",
                 "Complete": true
               },
               {
                 "Title": "Listas simples",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -52,22 +46,18 @@
             "BranchsTasks": [
               {
                 "Title": "Encapsulamento",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Abstração",
-                "Description": "",
                 "Complete": true
               },
               {
                 "Title": "LINQ",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Leitura de arquivos",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -80,17 +70,14 @@
             "BranchsTasks": [
               {
                 "Title": "Serialização avançada",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "interação com banco de dados",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "WebAPI",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -100,7 +87,6 @@
         "BranchsTasks": [
           {
             "Title": "Desenvolvimento de um projeto completo",
-            "Description": "",
             "Complete": false
           }
         ],
@@ -121,22 +107,18 @@
                 "BranchsTasks": [
                   {
                     "Title": "Números",
-                    "Description": "",
                     "Complete": true
                   },
                   {
                     "Title": "Cores",
-                    "Description": "",
                     "Complete": true
                   },
                   {
                     "Title": "Dias da semana",
-                    "Description": "",
                     "Complete": true
                   },
                   {
                     "Title": "Palavras do cotidiano",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -149,12 +131,10 @@
                 "BranchsTasks": [
                   {
                     "Title": "Estrutura de frases simples",
-                    "Description": "",
                     "Complete": false
                   },
                   {
                     "Title": "Pronomes pessoais e verbos de ação básicos",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -175,12 +155,10 @@
                 "BranchsTasks": [
                   {
                     "Title": "Palavras relacionadas a hobbies e interesses",
-                    "Description": "",
                     "Complete": true
                   },
                   {
                     "Title": "Adjetivos e descrições básicas",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -193,12 +171,10 @@
                 "BranchsTasks": [
                   {
                     "Title": "Uso de tempos verbais simples",
-                    "Description": "",
                     "Complete": false
                   },
                   {
                     "Title": "Construção de perguntas e respostas",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -211,12 +187,10 @@
                 "BranchsTasks": [
                   {
                     "Title": "Práticas de diálogos simples",
-                    "Description": "",
                     "Complete": false
                   },
                   {
                     "Title": "Compreensão de ingles falado em contextos familiares",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -229,12 +203,10 @@
                 "BranchsTasks": [
                   {
                     "Title": "Textos curtos",
-                    "Description": "",
                     "Complete": false
                   },
                   {
                     "Title": "Leitura de histórias básicas",
-                    "Description": "",
                     "Complete": false
                   }
                 ],
@@ -267,12 +239,10 @@
             "BranchsTasks": [
               {
                 "Title": "Estudo de regulamentações e público-alvo",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Definição de funcionalidades",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -285,12 +255,10 @@
             "BranchsTasks": [
               {
                 "Title": "Criação de Wireframes e design de UI",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Protótipos interativos",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -303,12 +271,10 @@
             "BranchsTasks": [
               {
                 "Title": "Implementação de layout responsivo",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Uso de tecnologias modernas",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -321,12 +287,10 @@
             "BranchsTasks": [
               {
                 "Title": "Escolha de banco de dados e lógica de negócios",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Implementação de autenticação",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -339,12 +303,10 @@
             "BranchsTasks": [
               {
                 "Title": "Registro, tipos de apostas, cotações em tempo real",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Histórico de apostas",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -357,12 +319,10 @@
             "BranchsTasks": [
               {
                 "Title": "Gateways de pagamentos seguro",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Testes de transações",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -375,12 +335,10 @@
             "BranchsTasks": [
               {
                 "Title": "HTTPS, medidas anti-fraude",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Conformidade com regulamentações",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -393,12 +351,10 @@
             "BranchsTasks": [
               {
                 "Title": "Testes abrangentes",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Verificação de compatibilidade",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -411,12 +367,10 @@
             "BranchsTasks": [
               {
                 "Title": "Lançamento e monitoramento contínuo",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Atualizações conforme feedback",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -429,12 +383,10 @@
             "BranchsTasks": [
               {
                 "Title": "Estratégias de marketing online",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Promoções e parcerias",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -455,12 +407,10 @@
             "BranchsTasks": [
               {
                 "Title": "Definição das operações básicas",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Identificação de público alvo",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -473,12 +423,10 @@
             "BranchsTasks": [
               {
                 "Title": "Configuração do ambiente",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Implementação de classe para realizar operações matemáticas",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -491,12 +439,10 @@
             "BranchsTasks": [
               {
                 "Title": "Criação de um menu simples para interação",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Solicitação de entrada para números e operadores",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -509,12 +455,10 @@
             "BranchsTasks": [
               {
                 "Title": "Implementação de métodos para realizar as operações básicas",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Tratamento de erros para divisões por zero ou operações inválidas",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -527,12 +471,10 @@
             "BranchsTasks": [
               {
                 "Title": "Exibição do resultado no console",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Opção de continuar calculando ou encerrar o programa",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -545,12 +487,10 @@
             "BranchsTasks": [
               {
                 "Title": "Adição de operações para limpar a calculadora ou reiniciar",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Validar entrada apenas para números e operadores válidos",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -563,12 +503,10 @@
             "BranchsTasks": [
               {
                 "Title": "Testes unitários para cada operação básica",
-                "Description": "",
                 "Complete": false
               },
               {
                 "Title": "Verificação do comportamento em diferentes cenários",
-                "Description": "",
                 "Complete": false
               }
             ],
@@ -578,7 +516,6 @@
         "BranchsTasks": [
           {
             "Title": "Lançamento do projeto",
-            "Description": "",
             "Complete": false
           }
         ],
